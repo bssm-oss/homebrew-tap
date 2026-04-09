@@ -6,13 +6,17 @@ class PortWho < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/bssm-oss/port-who/releases/download/v0.2.0/port-who"
-      sha256 "d13c427552d70bf9a6b57a4295b7b7f4f84e7f3341ae36013d76935c489837f0"
+      url "https://github.com/bssm-oss/port-who/releases/download/v0.2.0/port-who-macos-arm64"
+      sha256 "fea54d25d4a0c087171b16773638e9a97f06804a8b8603c4e326cb8d675d6b16"
+    end
+    on_intel do
+      url "https://github.com/bssm-oss/port-who/releases/download/v0.2.0/port-who-macos-x64"
+      sha256 "2793f6ed809d11eee082f494d10e413060c0d491dca76d0fd6b50f718aefaa9c"
     end
   end
 
   def install
-    bin.install "port-who"
+    bin.install stable.url.split("/").last => "port-who"
   end
 
   test do
