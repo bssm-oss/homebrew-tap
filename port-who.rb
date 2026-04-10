@@ -1,17 +1,17 @@
 class PortWho < Formula
   desc "Beautiful CLI that shows which processes are using which ports"
   homepage "https://github.com/bssm-oss/port-who"
-  version "0.4.0"
+  version "0.4.1"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/bssm-oss/port-who/releases/download/v0.4.0/port-who-macos-arm64"
-      sha256 "28ba849b8a55b13a06840a438be077899c787ee576aba309041eae9709dd038d"
+      url "https://github.com/bssm-oss/port-who/releases/download/v0.4.1/port-who-macos-arm64"
+      sha256 "6c5d0ebb3a6abd65be455ed201a2245ee7ebb8c36beede78b5f887aa3669f9bd"
     end
     on_intel do
-      url "https://github.com/bssm-oss/port-who/releases/download/v0.4.0/port-who-macos-x64"
-      sha256 "7d457e99df9c566b44aa934ec2041371b2127887d44c5aab6f291cbea00920e3"
+      url "https://github.com/bssm-oss/port-who/releases/download/v0.4.1/port-who-macos-x64"
+      sha256 "6218242326800a86311380874e87b650fe5d8567ce12c234aaf96854b1ad23b2"
     end
   end
 
