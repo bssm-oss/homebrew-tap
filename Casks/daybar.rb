@@ -13,13 +13,23 @@ cask "daybar" do
     system_command "/usr/bin/xattr",
                    args: ["-cr", "/Applications/daybar.app"],
                    sudo: false
+
+    wrapper = "#{HOMEBREW_PREFIX}/bin/daybar"
+    File.write(wrapper, "#!/bin/sh\nopen -a daybar \"$@\"\n")
+    FileUtils.chmod(0755, wrapper)
+
     system_command "/usr/bin/open",
                    args: ["/Applications/daybar.app"],
                    sudo: false
   end
 
+  uninstall_postflight do
+    wrapper = "#{HOMEBREW_PREFIX}/bin/daybar"
+    FileUtils.rm_f(wrapper)
+  end
+
   caveats <<~EOS
     설치 완료 후 daybar가 자동으로 실행됩니다.
-    이후 실행: open /Applications/daybar.app
+    터미널에서 `daybar` 명령으로 실행할 수 있습니다.
   EOS
 end
