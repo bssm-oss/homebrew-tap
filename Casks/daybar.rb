@@ -1,6 +1,6 @@
 cask "daybar" do
-  version "1.0.0"
-  sha256 "1fd08e68ea2a42f08b22484000bbfdecce98d3efabec2ef4bea4ef5e05b2bb4b"
+  version "1.1.0"
+  sha256 "ea275d87ab70700cf9f8202e4704490deb3edbab6c42a7e23a2107eed2ff242a"
 
   url "https://github.com/bssm-oss/daybar/releases/download/v#{version}/daybar-#{version}.dmg"
   name "daybar"
