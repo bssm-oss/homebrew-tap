@@ -9,14 +9,17 @@ cask "daybar" do
 
   app "daybar.app"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-cr", "/Applications/daybar.app"],
+                   sudo: false
+    system_command "/usr/bin/open",
+                   args: ["/Applications/daybar.app"],
+                   sudo: false
+  end
+
   caveats <<~EOS
-    daybar은 공증(Notarize)되지 않은 앱입니다.
-    처음 실행 시 macOS가 차단할 수 있습니다.
-
-    해결 방법:
-      시스템 설정 → 개인 정보 보호 및 보안 → "그래도 열기"
-
-    또는 터미널에서:
-      xattr -cr /Applications/daybar.app
+    설치 완료 후 daybar가 자동으로 실행됩니다.
+    이후 실행: open /Applications/daybar.app
   EOS
 end
