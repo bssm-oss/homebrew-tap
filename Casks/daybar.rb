@@ -2,10 +2,10 @@ cask "daybar" do
   version "1.2.0"
   sha256 "8b03fc30477511e8e31e29f51e260739a9e5eba7d2cf9c657beb7cc6630ef45a"
 
-  url "https://github.com/bssm-oss/daybar/releases/download/v#{version}/daybar-#{version}.dmg"
+  url "https://github.com/justn-hyeok/daybar/releases/download/v#{version}/daybar-#{version}.dmg"
   name "daybar"
   desc "macOS 메뉴바 D-day 트래커"
-  homepage "https://github.com/bssm-oss/daybar"
+  homepage "https://github.com/justn-hyeok/daybar"
 
   app "daybar.app"
 
