@@ -1,28 +1,28 @@
 class Ganbatte < Formula
   desc "Workflow/shortcut management CLI for lazy developers"
-  homepage "https://github.com/justn-hyeok/ganbatte"
-  version "1.0.1"
+  homepage "https://github.com/bssm-oss/ganbatte"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/justn-hyeok/ganbatte/releases/download/v1.0.1/ganbatte_darwin_amd64.tar.gz"
-      sha256 "b1173a810cee947729cb04330c5c90a245757ec291e66573417d88e140caa12f"
+      url "https://github.com/bssm-oss/ganbatte/releases/download/v1.1.0/ganbatte_darwin_amd64.tar.gz"
+      sha256 "16dbde63b91432c99d3689e3a0e446be2189d2976038a3c8aa2f5cc6d2356b38"
     end
     on_arm do
-      url "https://github.com/justn-hyeok/ganbatte/releases/download/v1.0.1/ganbatte_darwin_arm64.tar.gz"
-      sha256 "22e35dce098c8988719137ca780ab2fcc8192d69ec57ef6f3dab398c4bad0096"
+      url "https://github.com/bssm-oss/ganbatte/releases/download/v1.1.0/ganbatte_darwin_arm64.tar.gz"
+      sha256 "ca4bd8bd56d9ce701ad88bf259488b0eb0207706aaa95bd44fdc4de719ffbb56"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/justn-hyeok/ganbatte/releases/download/v1.0.1/ganbatte_linux_amd64.tar.gz"
-      sha256 "02487dbc50acf5b7cb01c62a7c3857c04871f5f1b94dd0d8dafe97787a758605"
+      url "https://github.com/bssm-oss/ganbatte/releases/download/v1.1.0/ganbatte_linux_amd64.tar.gz"
+      sha256 "97d8ef51e702d9ab907f0999f57a6e1f6777c2ef7ed84af81594c9461e590fe5"
     end
     on_arm do
-      url "https://github.com/justn-hyeok/ganbatte/releases/download/v1.0.1/ganbatte_linux_arm64.tar.gz"
-      sha256 "bd5d660fc052e950041e1706e4107383038cc207839e91b2eb72288db6445d72"
+      url "https://github.com/bssm-oss/ganbatte/releases/download/v1.1.0/ganbatte_linux_arm64.tar.gz"
+      sha256 "733085bdfc4e1bc13ce6f6f1c50ef1761db16da712adef1d86f5390e669de63d"
     end
   end
 
