@@ -5,21 +5,21 @@
 class Ganbatte < Formula
   desc "Workflow/shortcut management CLI for lazy developers"
   homepage "https://github.com/bssm-oss/ganbatte"
-  version "1.4.1"
+  version "1.4.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/bssm-oss/ganbatte/releases/download/v1.4.1/ganbatte_darwin_amd64.tar.gz"
-      sha256 "1768a2de403ea8e9ec7a8339bdc857987d4d3788f92da6ad0494f49742b93ea1"
+      url "https://github.com/bssm-oss/ganbatte/releases/download/v1.4.2/ganbatte_darwin_amd64.tar.gz"
+      sha256 "18dfef2e62f8bb2f86410aa8b5da67139d5ffccc0a58ffe3ff9eceff36b7fa16"
 
       define_method(:install) do
         bin.install "gnb"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/bssm-oss/ganbatte/releases/download/v1.4.1/ganbatte_darwin_arm64.tar.gz"
-      sha256 "12846dfc2377cdc2a7e40a37345f1a109fd1e7f8467dea972f7e0161e7fc2425"
+      url "https://github.com/bssm-oss/ganbatte/releases/download/v1.4.2/ganbatte_darwin_arm64.tar.gz"
+      sha256 "82cc16c18fa8d21e738dff7c02a2a4fc6e9411649557241813ca236eafcc8d08"
 
       define_method(:install) do
         bin.install "gnb"
@@ -29,15 +29,15 @@ class Ganbatte < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bssm-oss/ganbatte/releases/download/v1.4.1/ganbatte_linux_amd64.tar.gz"
-      sha256 "a1131188117a41b5d71a0c14eebff602d2c08f4352d9f7a22d3f6b24dcde9e1c"
+      url "https://github.com/bssm-oss/ganbatte/releases/download/v1.4.2/ganbatte_linux_amd64.tar.gz"
+      sha256 "1303ed0197dd7171d482aa995bea390955129e600c845ddd8a1799e867a1d344"
       define_method(:install) do
         bin.install "gnb"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bssm-oss/ganbatte/releases/download/v1.4.1/ganbatte_linux_arm64.tar.gz"
-      sha256 "a736ff84ad3c350ebaf491f4db460f612f0c4c5473e79cf72d00fe2e296dc8f5"
+      url "https://github.com/bssm-oss/ganbatte/releases/download/v1.4.2/ganbatte_linux_arm64.tar.gz"
+      sha256 "419766069eba5c4475e244b8c29a97c9343dc4cca7e6721e749ffed96d246c4e"
       define_method(:install) do
         bin.install "gnb"
       end
