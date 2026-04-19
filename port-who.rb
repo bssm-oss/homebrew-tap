@@ -7,11 +7,11 @@ class PortWho < Formula
   on_macos do
     on_arm do
       url "https://github.com/bssm-oss/shitty-justn/releases/download/port-who-v0.4.1/port-who-macos-arm64"
-      sha256 "6c5d0ebb3a6abd65be455ed201a2245ee7ebb8c36beede78b5f887aa3669f9bd"
+      sha256 "65f6c20ca9785b3d0ae6db73bd588162c943648e9c0321c09ecb6719a74b27ed"
     end
     on_intel do
       url "https://github.com/bssm-oss/shitty-justn/releases/download/port-who-v0.4.1/port-who-macos-x64"
-      sha256 "6218242326800a86311380874e87b650fe5d8567ce12c234aaf96854b1ad23b2"
+      sha256 "982b2980a346966f51aa123f6744a8037688d1d6e0f8d3d50f335d18ffa4676d"
     end
   end
 
