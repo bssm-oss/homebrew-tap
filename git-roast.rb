@@ -7,22 +7,22 @@ class GitRoast < Formula
   on_macos do
     on_arm do
       url "https://github.com/bssm-oss/shitty-justn/releases/download/git-roast-v0.2.0/git-roast-macos-arm64"
-      sha256 "616d125eaa051ee2778a6c94873068e9ccb9038f0e1c6b7f953a6851f7195654"
+      sha256 "ca0ebf6a7de893714a5abf6ee56b520c278e00afbe80a203071805b45dcbe300"
     end
     on_intel do
       url "https://github.com/bssm-oss/shitty-justn/releases/download/git-roast-v0.2.0/git-roast-macos-x64"
-      sha256 "9c5fce085fb81995b1b4e1b6d27c008d01a97a0363bd03188cc6643bfcfb721e"
+      sha256 "74e85ef41310b26918d39ac15f129e39f2d8b14291de27437440a3ddaf31d2ec"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/bssm-oss/shitty-justn/releases/download/git-roast-v0.2.0/git-roast-linux-arm64"
-      sha256 "2df6981b8cad1bfb2df81be3f44c9bd0549dc2cb41d527e17b3572090a166ae4"
+      sha256 "3e59bef1f9485483e2769f2c53dac85782db0dfdb542dd9caa5c76252da541b0"
     end
     on_intel do
       url "https://github.com/bssm-oss/shitty-justn/releases/download/git-roast-v0.2.0/git-roast-linux-x64"
-      sha256 "b010183d18184d239709847fe4cfdf5d8cfcd74531bc5676b6b83f2d1f90c070"
+      sha256 "14da4ff2477bcac42c79f1490520355d6491fa176c0840915a075df4f6de18b0"
     end
   end
 
