@@ -7,22 +7,22 @@ class DepAge < Formula
   on_macos do
     on_intel do
       url "https://github.com/bssm-oss/shitty-justn/releases/download/dep-age-v0.1.0/dep-age-x86_64-apple-darwin.tar.gz"
-      sha256 "14dc5f9187ae7c8dc6a7273fe4b8f957e203fcad3dc23db93655b97c33d9f35f"
+      sha256 "cedeafd8ee79d4ce8a10f6e133704c8993db234389231c9ae140145a36f5ff1e"
     end
     on_arm do
       url "https://github.com/bssm-oss/shitty-justn/releases/download/dep-age-v0.1.0/dep-age-aarch64-apple-darwin.tar.gz"
-      sha256 "db80a077961df3bbf81c64c605c00674a021d20fe24dee158f0f60d1354b61c2"
+      sha256 "a3e1cb9c35f07646c596961598a08c1df2826853c75adbeec53c996a38f2f3cc"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/bssm-oss/shitty-justn/releases/download/dep-age-v0.1.0/dep-age-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "acb3a7d5c9457f8656baad3cb6b257a11b0ca295aeb4b0cb9d82d29e73bb980a"
+      sha256 "cdb4eaffd42745fd41c214a29d4d2fa280cced151eeb6d7fe4609e6fd1dd4097"
     end
     on_arm do
       url "https://github.com/bssm-oss/shitty-justn/releases/download/dep-age-v0.1.0/dep-age-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "cd2bec97703c2448dfc1dcca528792fb5d83c2887eb14ce77df9a3b8883ee3b6"
+      sha256 "fba6e9c9e20e25c5dec2f1ba0c2f56fa2e672978c96da5f38c10de98824b0bf5"
     end
   end
 
