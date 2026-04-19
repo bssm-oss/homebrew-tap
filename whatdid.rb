@@ -7,22 +7,22 @@ class Whatdid < Formula
   on_macos do
     on_arm do
       url "https://github.com/bssm-oss/shitty-justn/releases/download/whatdid-v0.2.2/whatdid-darwin-arm64.tar.gz"
-      sha256 "98f94ef3c4e162f481e6801812684210c34c0b6d697581aa445f950ddec202f7"
+      sha256 "4d8a56f2f31f068b912327955c5c467aa7f7425be8300c632893643ce8972934"
     end
     on_intel do
       url "https://github.com/bssm-oss/shitty-justn/releases/download/whatdid-v0.2.2/whatdid-darwin-amd64.tar.gz"
-      sha256 "295b20b0fc6af1266066a670292df8d0269f05b53677d36ad0f33c277609158c"
+      sha256 "a6876640e069e57b40d39040e78bb29a12d07eecf0f8fe3b0141ca56fc7026dc"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/bssm-oss/shitty-justn/releases/download/whatdid-v0.2.2/whatdid-linux-arm64.tar.gz"
-      sha256 "341c4b12a3e77286706b4372919bcea85199c22182004ae3ccb1caed9728c73b"
+      sha256 "0af54b773e550201a4e0d9f8215c51d3e2d49252520a4207207948211f9c9e37"
     end
     on_intel do
       url "https://github.com/bssm-oss/shitty-justn/releases/download/whatdid-v0.2.2/whatdid-linux-amd64.tar.gz"
-      sha256 "2e1792b4e264a6e7374dcf0e8c9dc739e88235ccac2410c4aaeb4a75ad871d82"
+      sha256 "93e3d5b75c48362ed1083248bdf198ae1b4a756bc8d0089f230b6980f065e645"
     end
   end
 
