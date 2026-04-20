@@ -9,6 +9,10 @@ cask "rhythm-replica" do
 
   app "Rhythm Replica.app"
 
+  postflight do
+    system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{appdir}/Rhythm Replica.app"]
+  end
+
   zap trash: [
     "~/Library/Application Support/RhythmReplica",
     "~/Library/Caches/com.bssm.rhythmreplica",
