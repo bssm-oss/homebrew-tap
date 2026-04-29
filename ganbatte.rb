@@ -5,41 +5,45 @@
 class Ganbatte < Formula
   desc "Workflow/shortcut management CLI for lazy developers"
   homepage "https://github.com/bssm-oss/ganbatte"
-  version "1.4.2"
+  version "1.5.6"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/bssm-oss/ganbatte/releases/download/v1.4.2/ganbatte_darwin_amd64.tar.gz"
-      sha256 "18dfef2e62f8bb2f86410aa8b5da67139d5ffccc0a58ffe3ff9eceff36b7fa16"
+      url "https://github.com/bssm-oss/ganbatte/releases/download/v1.5.6/ganbatte_darwin_amd64.tar.gz"
+      sha256 "d500b211a7a22fcbe888fb08e8711eef8015b80a3bf26508921a120a82cca2b9"
 
       define_method(:install) do
         bin.install "gnb"
+        generate_completions_from_executable(bin/"gnb", "completion")
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/bssm-oss/ganbatte/releases/download/v1.4.2/ganbatte_darwin_arm64.tar.gz"
-      sha256 "82cc16c18fa8d21e738dff7c02a2a4fc6e9411649557241813ca236eafcc8d08"
+      url "https://github.com/bssm-oss/ganbatte/releases/download/v1.5.6/ganbatte_darwin_arm64.tar.gz"
+      sha256 "6d3250b4f02a9aadde38e2343a837f97a2ecf9253e574ba198fb29a1bcad12a1"
 
       define_method(:install) do
         bin.install "gnb"
+        generate_completions_from_executable(bin/"gnb", "completion")
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bssm-oss/ganbatte/releases/download/v1.4.2/ganbatte_linux_amd64.tar.gz"
-      sha256 "1303ed0197dd7171d482aa995bea390955129e600c845ddd8a1799e867a1d344"
+      url "https://github.com/bssm-oss/ganbatte/releases/download/v1.5.6/ganbatte_linux_amd64.tar.gz"
+      sha256 "0f66f283599ae3d7925731333b0ab3471537eb7ec000407e31e66681eff7b159"
       define_method(:install) do
         bin.install "gnb"
+        generate_completions_from_executable(bin/"gnb", "completion")
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bssm-oss/ganbatte/releases/download/v1.4.2/ganbatte_linux_arm64.tar.gz"
-      sha256 "419766069eba5c4475e244b8c29a97c9343dc4cca7e6721e749ffed96d246c4e"
+      url "https://github.com/bssm-oss/ganbatte/releases/download/v1.5.6/ganbatte_linux_arm64.tar.gz"
+      sha256 "9568a1357f43b67b869287020f84118c95b5b7be09fb58f2daa949a0f460b468"
       define_method(:install) do
         bin.install "gnb"
+        generate_completions_from_executable(bin/"gnb", "completion")
       end
     end
   end
