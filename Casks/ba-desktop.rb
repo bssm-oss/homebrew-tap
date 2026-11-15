@@ -21,18 +21,19 @@ cask "ba-desktop" do
   end
 
   # 앱이 끝날 때 메뉴 막대·Dock·바탕화면을 원래대로 돌린다(quit). 강제 종료로 테마가 남았으면 BA_REVERT 로 되돌린다
-  # (적용돼 있을 때만 움직인다 — SystemState.revert 의 isApplied). Homebrew 순서: launchctl → quit → script → delete
+  # (적용돼 있을 때만 움직인다 — SystemState.revert 의 isApplied). Homebrew 순서: launchctl → quit → script.
+  # 로그인 항목 plist 는 launchctl 단계가 서비스와 함께 지운다(delete: 는 sudo 로 지우려다 암호를 못 받아 실패했다 — 실측)
   uninstall launchctl: "com.onthelook.badesktop",
             quit:      "com.onthelook.badesktop",
             script:    {
               executable:   "/usr/bin/env",
               args:         ["BA_REVERT=1", "#{appdir}/BA Desktop.app/Contents/MacOS/BA Desktop"],
               must_succeed: false,
-            },
-            delete:    "~/Library/LaunchAgents/com.onthelook.badesktop.plist"
+            }
 
   zap trash: [
     "~/Library/Application Support/BA Desktop",
+    "~/Library/LaunchAgents/com.onthelook.badesktop.plist",
     "~/Library/Preferences/com.onthelook.badesktop.plist",
   ]
 
