@@ -1,6 +1,6 @@
 cask "ba-desktop" do
-  version "1.0.2"
-  sha256 "0f14086bde6420059e1b4d4d3bfdfdbc1a36a8f8d729b6ea2681a35e3bac94f9"
+  version "1.0.3"
+  sha256 "d65d75f0b54185dc7dd30353b12d40f8123a1d92ce5f527e82ddff1cb83ffafa"
 
   url "https://github.com/bssm-oss/blue-arhive-desktop/releases/download/v#{version}/BA-Desktop-#{version}.zip"
   name "BA Desktop"
